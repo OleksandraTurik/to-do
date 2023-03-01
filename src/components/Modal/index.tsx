@@ -11,7 +11,7 @@ interface IModalProps {
 const Modal = ({ data, onClose }: IModalProps) => {
   const [isChecked, setIsChecked] = useState(false);
 
-  const handleCheckboxChange = (event) => {
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(event.target.checked);
   };
 

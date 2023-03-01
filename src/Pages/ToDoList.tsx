@@ -24,7 +24,7 @@ const ToDoList = () => {
   });
   const dispatch = useDispatch();
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue({
       ...value,
       [event.target.name]: event.target.value,
@@ -42,7 +42,7 @@ const ToDoList = () => {
     return errors;
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.SyntheticEvent) => {
     event.preventDefault();
     const errors = validateForm();
     if (Object.keys(errors).length === 0) {

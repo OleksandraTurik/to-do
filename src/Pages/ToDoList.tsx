@@ -56,6 +56,7 @@ const ToDoList = () => {
     <>
       <form onSubmit={handleSubmit}>
         <Input
+          placeholder="Enter Title"
           type="text"
           name="title"
           text="Title:"
@@ -64,6 +65,7 @@ const ToDoList = () => {
           errors={errors}
         />
         <Input
+          placeholder="Enter description"
           type="text"
           name="description"
           text="Description:"

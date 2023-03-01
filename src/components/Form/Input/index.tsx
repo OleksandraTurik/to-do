@@ -15,6 +15,7 @@ interface IInputProps {
   disabled?: boolean;
   text?: string;
   onChange?: (value: any) => void;
+  placeholder?: string;
 }
 
 const Input = ({
@@ -27,10 +28,12 @@ const Input = ({
   disabled,
   checked,
   errors,
+  placeholder,
 }: IInputProps) => (
   <div className="form-group">
     <label>{text}</label>
     <input
+      placeholder={placeholder}
       name={name}
       type={type}
       value={value}
@@ -39,7 +42,9 @@ const Input = ({
       required={required}
       checked={checked}
     />
-    {errors?.title || errors?.description ? <span className="error">{errors.title}</span> : null}
+    {errors?.title || errors?.description ? (
+      <span className="error">{errors.title}</span>
+    ) : null}
   </div>
 );
 

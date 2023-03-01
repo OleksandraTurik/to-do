@@ -1,0 +1,13 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  text-align: start;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+}

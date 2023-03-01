@@ -1,7 +1,3 @@
-// Styled
-// import StyledButton from './styled';
-
-// Types
 import { IButtonProps } from './types';
 
 const Button = ({

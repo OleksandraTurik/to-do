@@ -26,7 +26,7 @@ const Modal = ({ data, onClose }: IModalProps) => {
             <label htmlFor="">Status:</label>
             <Input
               type="checkbox"
-              checked={data.status}
+              checked={isChecked}
               onChange={handleCheckboxChange}
               name="status"
             />
